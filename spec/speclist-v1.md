@@ -118,4 +118,13 @@ Comma with this lookahead automatically recognizes itself as the list terminator
 EG
 ,,,listItem1, listItem2, listItem3, notActuallyListItem | butAKeyValue
 => ["listItem1", "listItem2", "listItem3"], { notActuallyListItem: "butAKeyVaue"]
+```
+3.1.3. Double Dollar Sign
+```
+$$
+```
+Represents comment from starting point to end of line
 
+## Data Types (4)
+
+## Data Type Interpretation (5)
