@@ -46,6 +46,14 @@ $$ yaon inside yaon, add a guy streatching!
 
 yaon \o/ inner prop | inner value \o/ $$ { yaon: { "inner prop": "inner value" } }
 
+$$ Null values are denoted by -_- or - :
+
+no val | -_- $$ { "no val": undefined }
+empty list,,, -_-
+emppty yaon \o/ -_- 
+no val shorthand | -
+empty list shorthand with optional list terminator,,, - ,,,
+empty yaon shorthand with optional yaon terminator \o/ - \o/
 
 $$ below, yoan in all its greatness
 

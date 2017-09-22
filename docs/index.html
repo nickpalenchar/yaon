@@ -2,8 +2,8 @@
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="en">
-<link rel="icon" type="image/gif" href="http://www.JSON.org/favicon.gif">
-<title>JSON</title>
+<link rel="icon" type="image/gif" href="#"><!--TODO: favicon-->
+<title>YAON</title>
 <style>
 body {
     background-color: linen;
@@ -48,13 +48,14 @@ tt {
         alt="json logo" align="left" border="0" height="160" width="160"></td>
     <td align="center" valign="middle">
       <div style="border: 2px solid black; padding: 10px; background-color: white; margin-left: 40px; margin-right: 40px; font-family: serif;">
-        <h1 align="center">Introducing JSON</h1>
+        <h1 align="center">Introducing YAON</h1>
       </div>
     </td>
   </tr>
 </tbody></table>
 <hr>
-<div align="center"><small>
+    <!--TODO: translate this page and then unhide this-->
+<div align="center" style="display: none;"><small>
 <a href="json-ar.html">العربية</a>
 <a href="json-bg.html">Български</a>
 <a href="json-zh.html">中文</a>
@@ -86,38 +87,36 @@ tt {
 <a href="json-vi.html">Tiếng Việt</a>
 </small></div>
 <hr>
-<div align="center"><a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">ECMA-404 The JSON Data Interchange Standard</a>.</div>
-<hr>
 <div style="float: right; border: 2px solid black; margin: 10px; padding: 10px; background-color: white;">
   <dl>
     <dt><i>object</i></dt>
-    <dd><tt>{}</tt><br>
-      <tt>{</tt> <i>members</i> <tt>}</tt> </dd>
+      <dd><tt>\o/ \o/}</tt><br>
+        <tt>\o/</tt> <i>members</i> <tt>\o/</tt> </dd>
     <dt><i>members</i></dt>
-    <dd><i>pair</i><br>
-        <i>pair</i> <tt>,</tt> <i>members</i></dd>
+      <dd><i>pair</i><br>
+        <i>pair</i> (<tt>,</tt><i> or </i> <tt><i>newline</i></tt>) <i>members</i></dd>
     <dt><i>pair</i></dt>
-    <dd><i>string</i> <tt>:</tt> <i>value</i></dd>
-    <dt><i>array</i></dt>
-    <dd><tt>[]</tt><br>
-      <tt>[</tt> <i>elements</i> <tt>]</tt></dd>
+      <dd><i>sentence</i> <tt>|</tt> <i>value</i></dd>
+    <dt><i>list</i></dt>
+      <dd><tt>,,, [,,,]</tt><br>
+        <tt>,,,</tt> <i>elements</i> <tt>[,,,]</tt></dd>
     <dt><i>elements</i></dt>
-    <dd><i>value</i> <br>
+      <dd><i>value</i> <br>
         <i>value</i> <tt>,</tt> <i>elements</i></dd>
     <dt><i>value</i></dt>
-    <dd><i>string</i><br>
-      <i>number</i><br>
-      <i>object</i><br>
-      <i>array</i><br>
-      <tt>true</tt><br>
-      <tt>false</tt><br>
-      <tt>null</tt></dd>
+      <dd><i>sentence</i><br>
+        <i>number</i><br>
+        <i>object</i><br>
+        <i>list</i><br>
+        <tt>true</tt><br>
+        <tt>false</tt><br>
+        <tt>null</tt></dd>
   </dl>
   <hr align=center width=144>
   <dl>
-    <dt><i>string</i></dt>
+    <dt><i>sentence</i></dt>
     <dd><tt>""</tt><br>
-      <tt>"</tt> <i>chars</i> <tt>"</tt></dd>
+      <tt>["]</tt> <i>chars</i> <tt>["]</tt></dd>
     <dt><i>chars</i></dt>
     <dd><i>char</i><br>
       <i>char chars</i></dd>
@@ -164,47 +163,43 @@ tt {
 </div>
 
 
-<p><b>JSON</b> (JavaScript Object Notation) is a lightweight data-interchange
-  format. It is easy for humans to read and write. It is easy for machines to
-  parse and generate. It is based on a subset of the
-  <a href="http://javascript.crockford.com/">JavaScript
-  Programming Language</a>,
-  <a href="http://www.ecma-international.org/publications/files/ecma-st/ECMA-262.pdf">Standard
-  ECMA-262 3rd Edition - December 1999</a>. JSON is a text format that is completely
-  language independent but uses conventions that are familiar to programmers of
-  the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python,
-  and many others. These properties make JSON an ideal data-interchange language.</p>
-<p>JSON is built on two structures:</p>
+<p><b>YAON</b> (Yet Another Object Notation) (pronounced "Yawn") is a lightweight data-interchange
+  format. It is easy(ish) for humans to read and write. It is easy(ish-ish) for machines to
+  parse and generate. It is based on a subset of 
+  <a href="http://www.scpl.org/resources_services/internet_links/BasicKeyboard.pdf">characters you can type on your keyboard.</a>. YAON is a text format that is completely
+  language independent but uses conventions that are familiar(again, ish) to programmers
+    using object notaiton languages, as this is, as the name implies, yet another one. These properties make YAON) an ideal(ISH) data-interchange language.</p>
+<p>YAON is built on two structures:</p>
 <ul>
   <li>A collection of name/value pairs. In various languages, this is realized
     as an <i>object</i>, record, struct, dictionary, hash table, keyed list, or
     associative array.</li>
   <li>An ordered list of values. In most languages, this is realized as an <i>array</i>,
-    vector, list, or sequence.</li>
+    vector, list, or sequence.</li> In YAON. It is recognized as a list.
 </ul>
 <p>These are universal data structures. Virtually all modern
 programming languages support them in one form or another. It makes sense
 that a data format that is interchangeable with programming languages also
 be based on these structures.</p>
-<p>In JSON, they take on these forms:</p>
+<p>In YAON, they take on these forms:</p>
 <p>An <i>object</i> is an unordered set of name/value pairs. An object
-  begins with <tt>{</tt>&nbsp;<small>(left brace)</small> and ends
-  with <tt>}</tt>&nbsp;<small>(right brace)</small>. Each name is followed
-  by <tt>:</tt>&nbsp;<small>(colon)</small> and the name/value pairs are
-  separated by <tt>,</tt>&nbsp;<small>(comma)</small>.</p>
+  begins with <tt>\o/</tt>&nbsp;<small>(Yaon Guy)</small> and ends
+  with <tt>\o/</tt>&nbsp;<small>(Yaon Guy)</small>. Each name is followed
+  by <tt>|</tt>&nbsp;<small>(pipe)</small> and the name/value pairs are
+  separated by <tt>\n</tt>&nbsp;<small>(new line)</small> OR <tt>,</tt>&nbsp;<small>(comma)</small>.</p>
 
 <p><img src="object.gif" width="598" height="113"></p>
 
-<p>An <i>array</i> is an ordered collection of values. An array begins
-  with <tt>[</tt>&nbsp;<small>(left bracket)</small> and ends
-  with <tt>]</tt>&nbsp;<small>(right bracket)</small>. Values are separated
-  by <tt>,</tt>&nbsp;<small>(comma)</small>.</p>
+<p>A <i>list</i> is an ordered collection of values. An list begins
+  with <tt>,,,</tt>&nbsp;<small>(commalipse)</small> and optionally ends
+  with <tt>,,,</tt>&nbsp;<small>(commalipse)</small>. Values are separated
+  by <tt>\n</tt>&nbsp;<small>(new line)</small> OR <tt>,</tt>&nbsp;<small>(comma)</small>.</p>
 
 <p><img src="array.gif" width="598" height="113"></p>
 
-<p>A <i>value</i> can be a <i>string</i> in double quotes, or a <i>number</i>,
+<p>A <i>value</i> can be a <i>sentence</i> (no quotes nescessary), or a <i>number</i>,
   or <tt>true</tt> or <tt>false</tt> or <tt>null</tt>, or an <i>object</i> or
-  an <i>array</i>. These structures can be nested.</p>
+  a <i>list</i>. These structures can be nested.</p>
 
 <p><img src="value.gif" width="598" height="278"></p>
 
